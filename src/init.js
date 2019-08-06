@@ -9,9 +9,7 @@ import "./models/Video";
 import "./models/Comment";
 import "./models/User";
 
-const PORT = 8000;
-
-console.log(process.env.PORT, PORT)
+const PORT = process.env.PORT || 4000;
 
 const handleListening = () =>
   console.log(`✅  Listening on: http://localhost:${PORT}`);
